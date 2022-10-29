@@ -5,7 +5,7 @@
 body {
   margin: 0 auto;
   max-width: 1160px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* ****** HEADER ******* */
@@ -14,6 +14,8 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+  z-index: 5;
   background-color: #000000;
   color: #ffffff;
   height: 80px;
@@ -48,3 +50,58 @@ nav ul li a {
 }
 
 /* ****** /HEADER ******* */
+
+/* MAIN */
+.banner {
+  background: url("./../../assets/images/Giant\ Panda.png");
+  background-position: center 0;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 780px;
+  position: relative;
+  z-index: 1;
+  top: -80px;
+}
+
+.circle {
+  position: absolute;
+  width: 465px;
+  height: 465px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 50%;
+  left: calc(50% - 465px / 2 + 239.5px);
+  top: 92px;
+}
+
+.title {
+  position: absolute;
+  width: 500.31px;
+  height: 400px;
+  left: calc(50% - 500.31px / 2 + 330.15px);
+  top: 166px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 106.496px;
+  line-height: 75%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.orange-title {
+  color: #ffee2e;
+}
+
+.btn-title {
+  position: absolute;
+  width: 298px;
+  height: 54px;
+  left: calc(50% - 298px / 2 + 332px);
+  top: 626px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 25px;
+  border-style: none;
+  color: #ffffff;
+}
