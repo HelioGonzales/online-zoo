@@ -11,10 +11,13 @@ body {
 /* ****** HEADER ******* */
 
 header {
+  position: absolute;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
   z-index: 5;
   background-color: #000000;
   color: #ffffff;
@@ -54,15 +57,22 @@ nav ul li a {
 /* MAIN */
 
 /* ****** BANNER ********** */
-#banner {
+
+.banner-section {
+  height: 780px;
+}
+
+#banner-bg {
+  position: absolute;
   background: url("./../../assets/images/Giant\ Panda.png");
   background-position: center 0;
   background-size: cover;
   object-fit: cover;
   background-repeat: no-repeat;
   height: 780px;
-  /* max-width: 1600px; */
-  position: relative;
+  max-width: 1600px;
+  left: 0;
+  right: 0;
   z-index: 1;
   top: -80px;
 }
@@ -115,10 +125,9 @@ nav ul li a {
 
 .backstage-wrapper {
   display: flex;
-  padding-right: 30px;
-  padding-left: 30px;
   height: 427px;
   gap: 50px;
+  margin-top: 140px;
 }
 
 .backstage-left {
@@ -132,7 +141,6 @@ nav ul li a {
 
 .backstage-right {
   width: 50%;
-  /* width: 464px; */
 }
 
 .backstage-right h2 {
@@ -183,11 +191,23 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1600px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 180px;
+}
+
+.pets-center-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pets-card-wrapper {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
   width: 1158px;
   height: 872px;
 }
@@ -232,5 +252,23 @@ p {
 .pets-left-btn {
   width: 62px;
   height: 62px;
+  margin: 0 20px 0 20px;
 }
+
+.pets-btn {
+  width: 298px;
+  height: 54px;
+  background: #fe9013;
+  border-radius: 25px;
+  margin-top: 80px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 /* ********** /PETS ******** */
