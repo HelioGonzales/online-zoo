@@ -192,9 +192,6 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   max-width: 1600px;
-  position: absolute;
-  left: 0;
-  right: 0;
   margin-top: 180px;
 }
 
@@ -261,6 +258,7 @@ p {
   background: #fe9013;
   border-radius: 25px;
   margin-top: 80px;
+  margin-bottom: 100px;
   border: none;
   font-style: normal;
   font-weight: 500;
@@ -272,3 +270,322 @@ p {
 }
 
 /* ********** /PETS ******** */
+
+/* ******* PICK AND FEED */
+
+.pick-and-feed_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+  opacity: 0.9;
+  left: 0;
+  right: 0;
+  height: 1004px;
+  max-width: 1600px;
+  padding-bottom: 69px;
+}
+
+.pick-and-feed_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 69px;
+  margin-bottom: 100px;
+  width: 1160px;
+  height: 835px;
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.pick-and-feed_title_1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  /* identical to box height, or 58px */
+
+  text-align: center;
+
+  color: #fe9013;
+  margin-top: 41px;
+  margin-bottom: 30px;
+}
+
+.pick-and-feed_title_2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  /* identical to box height, or 21px */
+
+  color: #333b41;
+  margin-bottom: 10px;
+}
+
+.pick-and-feed_des_1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 40px;
+  /* identical to box height, or 29px */
+
+  color: #333b41;
+}
+
+.pick-and-feed_des_2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  /* or 21px */
+
+  color: #333b41;
+  margin-bottom: 60px;
+}
+
+.pick-and-feed_title_3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  color: #333b41;
+  margin-bottom: 40px;
+}
+
+.pick-and-feed_des_wrapper {
+  padding-left: 99px;
+  padding-right: 99px;
+}
+
+.pick-and-feed_pics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 168px;
+  margin-bottom: 60px;
+}
+
+.pick-and-feed_process {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pick-and-feed_process_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 168px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px orange solid;
+  margin-bottom: 30px;
+}
+
+.pick-and-feed_process_des {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333b41;
+  width: 168px;
+  height: 46px;
+  word-wrap: break-word;
+}
+
+.pick-and-feed_process_arrow {
+  margin-left: 30px;
+  margin-right: 31px;
+}
+
+.pick-and-feed_btn {
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 25px;
+  width: 298px;
+  height: 54px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 69px;
+}
+
+/* ******* /PICK AND FEED */
+
+/* ********** TESTIMONIALS *********** */
+
+#testimonials {
+}
+
+.testimonials_wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  top: 3753px;
+
+  background-color: #ffffff;
+}
+
+.testimonials_content {
+  height: 575px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 180px;
+}
+
+.testimonial_title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  /* identical to box height, or 47px */
+
+  text-align: center;
+
+  color: #333b41;
+
+  height: 47px;
+  margin-bottom: 47px;
+}
+
+.testimonials_slider {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 21px;
+}
+
+.testimonial_card {
+  width: 268px;
+  height: 391px;
+  box-sizing: border-box;
+  background: #f1f3f2;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-image: linear-gradient(#f5f7f6, #f5f7f6),
+    linear-gradient(
+      to right bottom,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+}
+
+.testimonial-card_sub_title {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-card_sub_title div img {
+  width: 37px;
+  height: 37px;
+  margin-top: 15px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.testimonial-card_user_name {
+  width: 97px;
+  height: 19px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+
+  color: #000000;
+}
+
+.testimonial-card_user_location {
+  /* width: 87px; */
+  height: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #bdbdbd;
+}
+
+.testimonial-card_text {
+  font-family: "Roboto";
+  /* font-style: normal; */
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #767474;
+  padding: 10px 15px 19px 16px;
+}
+
+.testimonials_progress {
+  width: 599px;
+  height: 8px;
+  color: #fe9013;
+}
+
+.feedback-btn {
+  width: 298px;
+  height: 54px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 5px;
+  border: none;
+  left: 220px;
+  position: absolute;
+  bottom: 150px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/* ********** /TESTIMONIALS *********** */ ;
