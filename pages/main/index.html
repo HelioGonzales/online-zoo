@@ -15,22 +15,24 @@
 
 <body>
   <header>
+    <h1>PetStory Online</h1>
     <div class="wraper-nav-logo">
       <div>
-        <img class="logo" src="./../../assets/images/logo_footer.svg" alt="logo">
+        <a href="/pages/main/index.html"><img class="logo" src="./../../assets/images/logo_footer.png" alt="logo"></a>
       </div>
       <nav>
         <ul>
-          <li><a href="">About</a> </li>
-          <li><a href="">Map</a> </li>
-          <li><a href="">Zoos</a></li>
-          <li><a href="">Donate</a> </li>
-          <li><a href="">Contact us</a></li>
+          <li><a class="nav-link active" href="/pages/main/index.html">About</a> </li>
+          <li><a class="nav-link" href="#/">Map</a> </li>
+          <li><a class="nav-link" href="#/">Zoos</a></li>
+          <li><a class="nav-link" href="/pages/donate/index.html">Donate</a> </li>
+          <li><a class="nav-link" href="#/">Contact us</a></li>
         </ul>
       </nav>
     </div>
     <div>
-      <img src="./../../assets/images/Designed by ©.svg" alt="Designed by">
+      <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1" target="_blank"><img
+          src="./../../assets/images/Designed by ©.svg" alt="Designed by"></a>
     </div>
   </header>
   <main>
@@ -68,7 +70,7 @@
     </section>
     <section id="pets" class="wrap-sections">
       <div class="pets-left-btn">
-        <a href="#"><img src="./../../assets/icons/arrow_elips_2.png" alt="arrow-left"></a>
+        <a href="#/"><img src="./../../assets/icons/arrow_elips_2.png" alt="arrow-left"></a>
       </div>
       <div class="pets-center-wrapper">
         <div class="pets-card-wrapper">
@@ -148,7 +150,7 @@
         <button class="pets-btn">CHOOSE YOUR FAVORITE</button>
       </div>
       <div class="pets-right-btn">
-        <a href="#"><img src="./../../assets/icons/arrow_elips_1.png" alt="arrow-right"></a>
+        <a href="#/"><img src="./../../assets/icons/arrow_elips_1.png" alt="arrow-right"></a>
       </div>
 
     </section>
@@ -161,14 +163,16 @@
               we&#39;re
               glad.</p>
             <div class="pick-and-feed_title_2">During a time when the COVID-19 epidemic is touching all of our lives,
-              we’re
+              we&#39;re
               proud and glad that people
               around the world
               find joy in PetStory.</div>
             <p class="pick-and-feed_des_2">Even though the zoo has reopened, we need you now more than ever to
               help us deal with these problems.
               Please consider a
-              gift to our Emergency Support Fund .</p>
+              gift to our <a href="../donate/index.html" class="emergency-support-link">Emergency Support
+                Fund</a>.
+            </p>
           </div>
           <div class="pick-and-feed_title_3">How it works</div>
           <div class="pick-and-feed_pics">
@@ -314,20 +318,24 @@
   <footer>
     <div class="footer-wrapper wrap-sections">
       <div class="footer-wrapper_left">
-        <div><a href="#"><img src="./../../assets/images/logo_footer.svg" alt="Logo"></a></div>
+        <div><a href="#"><img src="./../../assets/images/logo_footer.png" alt="Logo"></a></div>
         <button class="btn-donate">donate for volunteers</button>
         <div>
           <ul>
-            <li><a href=""><img src="./../../assets/images/facebook.svg" alt=""></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="./../../assets/images/facebook.svg"
+                  alt=""></a></li>
           </ul>
           <ul>
-            <li><a href=""><img src="./../../assets/images/twitter.svg" alt=""></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><img src="./../../assets/images/twitter.svg" alt=""></a>
+            </li>
           </ul>
           <ul>
-            <li><a href=""><img src="./../../assets/images/instagram.svg" alt=""></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="./../../assets/images/instagram.svg"
+                  alt=""></a></li>
           </ul>
           <ul>
-            <li><a href=""><img src="./../../assets/images/youtube.svg" alt=""></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><img src="./../../assets/images/youtube.svg"
+                  alt=""></a></li>
           </ul>
         </div>
       </div>
@@ -336,10 +344,10 @@
         <div></div>
         <div class="footer-wrapper_center_down">
           <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Map</a></li>
-            <li><a href="">Zoos</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a class="nav-link active" href="../main/index.html">About</a></li>
+            <li><a class="nav-link" href="#/">Map</a></li>
+            <li><a class="nav-link" href="#/">Zoos</a></li>
+            <li><a class="nav-link" href="#/">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -348,8 +356,8 @@
           <form>
             <label for="footer-form">Subscribe to our news</label>
             <div class="footer-wrapper_input_form">
-              <input id="footer-form" type="text" placeholder="Enter your email">
-              <button class="footer-btn-submit">Submit</button>
+              <input id="footer-form" type="email" placeholder="Enter your email">
+              <button class="footer-btn-submit" type="submit">Submit</button>
             </div>
           </form>
         </div>
@@ -358,10 +366,6 @@
             <li>Designed by Alisa Samborskaya</li>
             <li>©RSSchool & ©Yem Digital 2021</li>
           </ul>
-
-
-
-
         </div>
       </div>
     </div>
