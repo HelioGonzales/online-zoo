@@ -505,12 +505,12 @@ p {
 }
 
 .testimonials_content {
-  height: 575px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 140px;
   padding-bottom: 180px;
+  gap: 30px;
 }
 
 .testimonial_title {
@@ -603,12 +603,20 @@ p {
   padding: 10px 15px 19px 16px;
 }
 
-.testimonials_progress {
+progress {
+  border-radius: 5px;
   width: 599px;
   height: 8px;
-  color: #fe9013;
   margin-top: 21px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+progress::-webkit-progress-bar {
+  background-color: #f5f7f6;
+  border-radius: 5px;
+}
+progress::-webkit-progress-value {
+  background-color: #fe9013;
+  border-radius: 5px;
 }
 
 .feedback-btn {
@@ -624,6 +632,10 @@ p {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.feedback-btn:last-of-type {
+  margin-right: auto;
 }
 
 .feedback-btn:hover {
@@ -645,7 +657,7 @@ footer {
 
 .footer-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 100%;
 }
 
