@@ -3,9 +3,19 @@
 }
 
 body {
-  margin: 0 auto;
-  max-width: 1160px;
+  padding: 0;
+  margin: 0;
   overflow-x: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.wrap-sections {
+  max-width: 1160px;
+  margin: 0 auto;
 }
 
 /* ****** HEADER ******* */
@@ -22,6 +32,13 @@ header {
   background-color: #000000;
   color: #ffffff;
   height: 80px;
+}
+
+h1 {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
 }
 
 .wraper-nav-logo {
@@ -47,9 +64,32 @@ nav ul li {
   margin: 10px;
 }
 
-nav ul li a {
+.nav-link {
   color: #ffffff;
   text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-link:focus {
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.active {
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* ****** /HEADER ******* */
@@ -57,9 +97,6 @@ nav ul li a {
 /* MAIN */
 
 /* ****** BANNER ********** */
-
-#banner-section {
-}
 
 .banner-bg {
   position: relative;
@@ -115,7 +152,19 @@ nav ul li a {
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border-radius: 25px;
   border-style: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
+}
+
+.btn-title:hover {
+  background: #e47209;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 /* ****** /BANNER ********** */
@@ -178,7 +227,6 @@ nav ul li a {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-
   color: #333b41;
 }
 
@@ -214,6 +262,7 @@ nav ul li a {
   border-radius: 5px;
   box-sizing: border-box;
   border: 1px orange solid;
+  cursor: pointer;
 }
 
 .card-img {
@@ -267,6 +316,11 @@ p {
   text-transform: uppercase;
   color: #ffffff;
 }
+.pets-btn:hover {
+  background: #e47209;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
 /* ********** /PETS ******** */
 
@@ -276,7 +330,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* position: absolute; */
   background: linear-gradient(
       315.75deg,
       rgba(254, 210, 144, 0.7) 30.06%,
@@ -300,8 +353,6 @@ p {
       #eaf7fe 149.54%
     );
   opacity: 0.9;
-  /* left: 0;
-  right: 0; */
   height: 1004px;
   max-width: 1600px;
   padding-bottom: 69px;
@@ -326,10 +377,7 @@ p {
   font-weight: 400;
   font-size: 48px;
   line-height: 120%;
-  /* identical to box height, or 58px */
-
   text-align: center;
-
   color: #fe9013;
   margin-top: 41px;
   margin-bottom: 30px;
@@ -340,8 +388,6 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
-  /* identical to box height, or 21px */
-
   color: #333b41;
   margin-bottom: 10px;
 }
@@ -352,8 +398,6 @@ p {
   font-size: 24px;
   line-height: 120%;
   margin-bottom: 40px;
-  /* identical to box height, or 29px */
-
   color: #333b41;
 }
 
@@ -362,8 +406,6 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
-  /* or 21px */
-
   color: #333b41;
   margin-bottom: 60px;
 }
@@ -425,6 +467,12 @@ p {
   margin-right: 31px;
 }
 
+.emergency-support-link {
+  text-decoration: none;
+  border-bottom: 1px solid #fe9013;
+  color: #333b41;
+}
+
 .pick-and-feed_btn {
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border-radius: 25px;
@@ -442,29 +490,27 @@ p {
   margin-bottom: 69px;
 }
 
+.pick-and-feed_btn:hover {
+  background: #e47209;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 /* ******* /PICK AND FEED */
 
 /* ********** TESTIMONIALS *********** */
 
-#testimonials {
-}
-
-.testimonials_wrapper {
-  /* position: absolute;
-  left: 0;
-  right: 0; */
-
-  /* top: 3753px; */
-
-  /* background-color: #ffffff;s */
+.tesmonials {
+  height: 1004px;
 }
 
 .testimonials_content {
-  height: 575px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 140px;
   padding-bottom: 180px;
+  gap: 30px;
 }
 
 .testimonial_title {
@@ -472,12 +518,8 @@ p {
   font-weight: 400;
   font-size: 36px;
   line-height: 130%;
-  /* identical to box height, or 47px */
-
   text-align: center;
-
   color: #333b41;
-
   height: 47px;
   margin-bottom: 47px;
 }
@@ -538,12 +580,10 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
-
   color: #000000;
 }
 
 .testimonial-card_user_location {
-  /* width: 87px; */
   height: 18px;
   font-family: "Roboto";
   font-style: normal;
@@ -555,7 +595,6 @@ p {
 
 .testimonial-card_text {
   font-family: "Roboto";
-  /* font-style: normal; */
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -564,10 +603,20 @@ p {
   padding: 10px 15px 19px 16px;
 }
 
-.testimonials_progress {
+progress {
+  border-radius: 5px;
   width: 599px;
   height: 8px;
-  color: #fe9013;
+  margin-top: 21px;
+  margin-bottom: 10px;
+}
+progress::-webkit-progress-bar {
+  background-color: #f5f7f6;
+  border-radius: 5px;
+}
+progress::-webkit-progress-value {
+  background-color: #fe9013;
+  border-radius: 5px;
 }
 
 .feedback-btn {
@@ -576,9 +625,6 @@ p {
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border-radius: 5px;
   border: none;
-  /* left: 220px; */
-  /* position: absolute; */
-  /* bottom: 150px; */
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -587,6 +633,16 @@ p {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.feedback-btn:last-of-type {
+  margin-right: auto;
+}
+
+.feedback-btn:hover {
+  background: #e47209;
+  cursor: pointer;
+  transition: 0.3s;
+}
 /* ********** /TESTIMONIALS *********** */
 
 /* ******** FOOTER *********/
@@ -594,19 +650,14 @@ footer {
   height: 413px;
   background-color: black;
   color: white;
-  position: absolute;
   max-width: 1600px;
-  left: 0;
-  right: 0;
-  padding-left: 200px;
-  padding-right: 200px;
   padding-bottom: 21px;
   padding-top: 41px;
 }
 
 .footer-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 100%;
 }
 
@@ -634,8 +685,6 @@ footer {
   gap: 58px;
 }
 
-.footer-wrapper_center_down ul li {
-}
 .footer-wrapper_center_down a {
   text-decoration: none;
   font-family: "Roboto";
@@ -643,8 +692,6 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  /* or 22px */
-
   color: #ffffff;
 }
 
@@ -656,12 +703,17 @@ footer {
   font-size: 16px;
   line-height: 140%;
   border: none;
-
   text-align: center;
   text-transform: uppercase;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border-radius: 5px;
   color: #ffffff;
+}
+
+.btn-donate:hover {
+  background: #e47209;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .footer-wrapper_right {
