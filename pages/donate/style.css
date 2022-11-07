@@ -139,7 +139,6 @@ nav ul li {
       #eaf7fe 149.54%
     );
   opacity: 0.9;
-  height: 1004px;
   max-width: 1600px;
   padding-bottom: 69px;
   margin-top: -80px;
@@ -192,11 +191,11 @@ nav ul li {
   margin-top: 60px;
   margin-bottom: 100px;
   width: 1160px;
-  height: 835px;
   background: rgba(253, 253, 255, 0.52);
   backdrop-filter: blur(2px);
   border-radius: 20px;
   box-sizing: border-box;
+  padding-bottom: 62px;
 }
 
 .pick-and-feed_title_1 {
@@ -210,15 +209,6 @@ nav ul li {
   margin-bottom: 30px;
 }
 
-.pick-and-feed_title_2 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 130%;
-  color: #333b41;
-  margin-bottom: 10px;
-}
-
 .pick-and-feed_des_1 {
   font-style: normal;
   font-weight: 400;
@@ -228,76 +218,273 @@ nav ul li {
   color: #333b41;
 }
 
-.pick-and-feed_des_2 {
+.pick-and-feed_panda {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pick-and-feed_panda_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pick-and-feed_panda_left_number {
+  width: 41px;
+  height: 58px;
+
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
-  color: #333b41;
-  margin-bottom: 60px;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 80%;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+  margin-bottom: 11px;
 }
 
-.pick-and-feed_title_3 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 130%;
-  color: #333b41;
-  margin-bottom: 40px;
-}
+.pick-and-feed_panda_left_des {
+  width: 159px;
+  height: 22px;
 
-.pick-and-feed_des_wrapper {
-  padding-left: 99px;
-  padding-right: 99px;
-}
-
-.pick-and-feed_pics {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 168px;
-  margin-bottom: 60px;
-}
-
-.pick-and-feed_process {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.pick-and-feed_process_img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 168px;
-  height: 168px;
-  background: #ffffff;
-  border-radius: 5px;
-  box-sizing: border-box;
-  border: 1px orange solid;
-  margin-bottom: 30px;
-}
-
-.pick-and-feed_process_des {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
+
+  text-align: center;
+
   color: #333b41;
-  width: 168px;
-  height: 46px;
-  word-wrap: break-word;
+  margin-right: 11px;
 }
 
-.pick-and-feed_process_arrow {
-  margin-left: 30px;
-  margin-right: 31px;
+.pick-and-feed_panda_pic {
+  margin-left: 64px;
 }
 
-.emergency-support-link {
-  text-decoration: none;
-  border-bottom: 1px solid #fe9013;
+.pick-and-feed-bar-block {
+  margin: 0;
+  padding: 0;
   color: #333b41;
+}
+
+.pick-and-feed-bar__title {
+  color: black;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+
+.bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  content: "";
+  width: 975px;
+  height: 27px;
+  background: #404950;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  margin-bottom: 15px;
+}
+
+.grey-bar {
+  position: absolute;
+  width: 915px;
+  height: 2px;
+  background: #72828e;
+  left: 30px;
+}
+
+.bar-input {
+  display: flex;
+  justify-content: center;
+  content: "";
+  width: 915px;
+  height: 27px;
+  background: #72828e;
+  background: transparent;
+  border-radius: 2px;
+  border: 1px solid transparent;
+}
+
+.bar-input[type="range"] {
+  width: 950px;
+  height: 2px;
+  margin: 0 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.bar-input[type="range"]::-webkit-slider-thumb {
+  background: url(../../assets/images/roller_icon.svg);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  -webkit-appearance: none;
+  margin-left: -1px;
+}
+
+.bar-input[type="range"]::-moz-range-thumb {
+  background: url(../../assets/images/roller_icon.svg);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  -webkit-appearance: none;
+  margin-left: -1px;
+  border: none;
+}
+
+.bar-input-little {
+  display: none;
+}
+
+.bar-input-little-600 {
+  display: none;
+}
+
+.circle-yellow {
+  cursor: pointer;
+}
+
+.circle-yellow {
+  content: "";
+  position: absolute;
+  left: 26px;
+  background: #ffee2e;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.circle_one {
+  left: 26px;
+}
+
+.circle_two {
+  left: 156px;
+}
+
+.circle_three {
+  left: 286px;
+}
+
+.circle_four {
+  left: 416px;
+}
+
+.circle_five {
+  left: 546px;
+}
+
+.circle_six {
+  left: 676px;
+}
+
+.circle_seven {
+  left: 806px;
+}
+
+.circle_eight {
+  left: 936px;
+}
+
+.money-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 50px;
+  width: 975px;
+}
+
+.money-text {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+  width: 80px;
+  text-align: center;
+}
+
+.amount {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  margin: 0 auto 25px;
+}
+
+.amount_dollar {
+  position: absolute;
+  display: block;
+  margin-left: 210px;
+  top: 2px;
+  width: 10px;
+  height: 20px;
+  fill: #929699;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.another-amount {
+  margin-bottom: 25px;
+  width: 268px;
+  height: 54px;
+  border: 1px solid #929699;
+  border-radius: 2px;
+  padding: 0 10px;
+}
+
+.amount_radiobuttons {
+  display: flex;
+  gap: 50px;
+  margin: 0 auto 30px;
+  justify-content: center;
+}
+
+.time {
+  /* display: none; */
+}
+
+.amount_radiobutton_item label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+
+/* .amount_radiobutton-item label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  border: 1px solid #fe9013;
+  border-radius: 50%;
+} */
+
+/* .time:checked + label::before {
+  border: 1px solid #4b9200;
+  background-color: #4b9200;
+}
+ */
+/* .amount_radiobutton-item label:hover:before {
+  filter: brightness(120%);
+}
+ */
+.pick-and-feed__text {
+  text-align: center;
+  line-height: 140%;
 }
 
 .pick-and-feed_btn {
