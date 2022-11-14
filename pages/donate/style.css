@@ -314,6 +314,7 @@ nav ul li {
   width: 950px;
   height: 2px;
   margin: 0 auto;
+  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -326,6 +327,7 @@ nav ul li {
   height: 40px;
   -webkit-appearance: none;
   margin-left: -1px;
+  border-radius: 50%;
 }
 
 .bar-input[type="range"]::-moz-range-thumb {
@@ -336,6 +338,7 @@ nav ul li {
   -webkit-appearance: none;
   margin-left: -1px;
   border: none;
+  border-radius: 50%;
 }
 
 .bar-input-little {
@@ -462,7 +465,7 @@ input::-webkit-inner-spin-button {
   user-select: none;
 }
 
-/* .amount_radiobutton-item label::before {
+.amount_radiobutton-item label::before {
   content: "";
   display: inline-block;
   width: 16px;
@@ -471,17 +474,17 @@ input::-webkit-inner-spin-button {
   left: 0;
   border: 1px solid #fe9013;
   border-radius: 50%;
-} */
+}
 
-/* .time:checked + label::before {
+.time:checked + label::before {
   border: 1px solid #4b9200;
   background-color: #4b9200;
 }
- */
-/* .amount_radiobutton-item label:hover:before {
+
+.amount_radiobutton-item label:hover:before {
   filter: brightness(120%);
 }
- */
+
 .pick-and-feed__text {
   text-align: center;
   line-height: 140%;
@@ -628,6 +631,12 @@ footer {
 .footer-wrapper_input_form {
   display: flex;
   margin-top: 14px;
+}
+
+.social-media:hover {
+  background: #e47209;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 /* ******** /FOOTER *********/
