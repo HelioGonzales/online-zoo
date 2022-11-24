@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   height: 100%;
   overflow-x: hidden;
+  max-width: 1600px;
 }
 
 .wrap-sections {
@@ -764,3 +765,132 @@ footer {
 }
 
 /* ******** /FOOTER *********/
+
+/* 
+1000px
+*/
+
+@media all and (max-width: 1000px) {
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-x: hidden;
+    max-width: 1000px;
+  }
+
+  .wrap-sections {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
+  header {
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .banner-bg {
+    position: relative;
+    background: url("./../../assets/images/Giant\ Panda.png");
+    background-position: center 0;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 780px;
+    max-width: 1000px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    top: -80px;
+  }
+
+  .title {
+    position: absolute;
+    width: 500.31px;
+    height: 400px;
+    left: 400px;
+    top: 166px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  #pets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 940px;
+    margin-top: 180px;
+    flex-direction: column;
+  }
+
+  .pets-right-btn,
+  .pets-left-btn {
+    order: 1;
+  }
+
+  .pets-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 940px;
+    height: 872px;
+  }
+
+  .card {
+    max-width: 294px;
+    height: 426px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px orange solid;
+    cursor: pointer;
+  }
+
+  .pick-and-feed_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 69px;
+    margin-bottom: 100px;
+    width: 843px;
+    height: 835px;
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+
+  .testimonials_slider {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 21px;
+    max-width: 940px;
+  }
+
+  footer {
+    height: 413px;
+    background-color: black;
+    color: white;
+    max-width: 1000px;
+    padding-bottom: 21px;
+    padding-top: 41px;
+  }
+
+  .footer-wrapper_center_down ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 0;
+  }
+}
