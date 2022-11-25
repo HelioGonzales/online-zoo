@@ -298,7 +298,7 @@ p {
 .pets-left-btn {
   width: 62px;
   height: 62px;
-  margin: 0 20px 0 20px;
+  margin: -230px 20px 0 20px;
 }
 
 .pets-btn {
@@ -834,17 +834,31 @@ footer {
     flex-direction: column;
   }
 
-  .pets-right-btn,
+  .pets-right-btn {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+  }
+
   .pets-left-btn {
-    order: 1;
+    position: absolute;
+    z-index: 10;
+    left: 40%;
+  }
+
+  .pets-left-btn,
+  .pets-right-btn {
+    margin: -170px 20px 0 20px;
   }
 
   .pets-card-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    /* gap: 20px; */
     width: 940px;
     height: 872px;
+    gap: 92px 20px;
   }
 
   .card {
