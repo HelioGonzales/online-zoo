@@ -53,6 +53,10 @@ h1 {
   box-sizing: border-box;
 }
 
+.nav-toggle {
+  display: none;
+}
+
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -176,7 +180,7 @@ nav ul li {
   display: flex;
   height: 427px;
   gap: 50px;
-  margin-top: 140px;
+  /* margin-top: 80px; */
 }
 
 .backstage-left {
@@ -840,5 +844,134 @@ footer {
 
   .footer-wrapper_center_down ul {
     gap: 10px;
+  }
+}
+
+/* 
+640px
+*/
+
+@media all and (max-width: 640px) {
+  body {
+    max-width: 640px;
+  }
+
+  .wrap-sections {
+    max-width: 640px;
+  }
+
+  header {
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .nav-toggle {
+    display: block;
+    padding-left: 510px; /* temporal */
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .banner-bg {
+    max-width: 640px;
+  }
+
+  .title {
+    left: 130px;
+    top: 166px;
+    font-size: 50px;
+  }
+
+  .btn-title {
+    left: 20px;
+  }
+
+  .circle {
+    left: 350px;
+    top: 92px;
+    width: 237px;
+    height: 237px;
+  }
+
+  .backstage-left {
+    display: none;
+  }
+
+  #pets {
+    max-width: 640px;
+  }
+
+  .card.cheetahs,
+  .card.pinguins {
+    display: none;
+  }
+  .pets-right-btn {
+    position: absolute;
+    z-index: 10;
+    left: 48%;
+  }
+
+  .pets-left-btn {
+    position: absolute;
+    z-index: 10;
+    left: 37%;
+  }
+
+  .pets-left-btn,
+  .pets-right-btn {
+    margin: -170px 20px 0 20px;
+  }
+
+  .pets-card-wrapper {
+    justify-content: center;
+    width: 640px;
+    gap: 92px 20px;
+  }
+
+  .card {
+    max-width: 294px;
+  }
+
+  .pick-and-feed_content {
+    margin-bottom: 100px;
+    width: 640px;
+  }
+
+  .pick-and-feed_pics {
+    gap: 20px;
+  }
+
+  .pick-and-feed_process {
+    flex-direction: column-reverse;
+  }
+
+  .pick-and-feed_process_arrow {
+    /* margin-left: 30px; */
+    margin-right: -150px;
+  }
+
+  .testimonials_slider {
+    max-width: 640px;
+    flex-direction: column;
+  }
+
+  .testimonial_card {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    max-width: 640px;
+  }
+
+  .footer-wrapper_center_down ul {
+    gap: 0px;
+  }
+
+  .footer-wrapper_right div form {
+    display: none;
   }
 }
