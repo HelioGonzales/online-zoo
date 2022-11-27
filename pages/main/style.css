@@ -976,7 +976,7 @@ footer {
 }
 
 /* 
-640px
+320px
 */
 @media all and (max-width: 320px) {
   body {
@@ -1073,7 +1073,7 @@ footer {
   }
 
   .pick-and-feed_wrapper {
-    height: 2000px;
+    height: 2100px;
   }
 
   .pick-and-feed_content {
@@ -1086,7 +1086,7 @@ footer {
   .pick-and-feed_pics {
     flex-direction: column;
     gap: 20px;
-    min-height: 100%;
+    height: 100%;
   }
 
   .pick-and-feed_process {
