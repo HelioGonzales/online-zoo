@@ -949,7 +949,6 @@ footer {
   }
 
   .pick-and-feed_process_arrow {
-    /* margin-left: 30px; */
     margin-right: -150px;
   }
 
@@ -965,6 +964,156 @@ footer {
 
   footer {
     max-width: 640px;
+  }
+
+  .footer-wrapper_center_down ul {
+    gap: 0px;
+  }
+
+  .footer-wrapper_right div form {
+    display: none;
+  }
+}
+
+/* 
+640px
+*/
+@media all and (max-width: 320px) {
+  body {
+    max-width: 320px;
+  }
+
+  .wrap-sections {
+    max-width: 320px;
+  }
+
+  header {
+    justify-content: space-between;
+    padding-left: 2px;
+    padding-right: 20px;
+  }
+
+  .nav-toggle {
+    display: block;
+    padding-left: 200px; /* temporal */
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .circle-title-wrapper {
+    width: 147px;
+  }
+
+  .banner-bg {
+    max-width: 320px;
+  }
+
+  .title {
+    left: 130px;
+    top: 150px;
+    font-size: 28px;
+    width: 128.13px;
+    height: 102.44px;
+  }
+
+  .btn-title {
+    left: 0px;
+    top: 800px;
+  }
+
+  .circle {
+    left: calc(50% - 119.09px / 2 + 62.45px);
+    top: 150px;
+    width: 119.09px;
+    height: 119.09px;
+  }
+
+  .backstage-left {
+    display: none;
+  }
+
+  #pets {
+    max-width: 320px;
+  }
+
+  .card.cheetahs,
+  .card.pinguins {
+    display: block;
+  }
+  .pets-right-btn {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    left: 48%;
+  }
+
+  .pets-left-btn {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    left: 37%;
+  }
+
+  .pets-left-btn,
+  .pets-right-btn {
+    margin: -170px 20px 0 20px;
+  }
+
+  .pets-card-wrapper {
+    justify-content: center;
+    width: 320px;
+    gap: 20px 0;
+    height: auto;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .pick-and-feed_wrapper {
+    height: 2000px;
+  }
+
+  .pick-and-feed_content {
+    margin-bottom: 100px;
+    width: 320px;
+    min-height: 100%;
+    margin: 20px;
+  }
+
+  .pick-and-feed_pics {
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100%;
+  }
+
+  .pick-and-feed_process {
+    flex-direction: column-reverse;
+  }
+
+  .pick-and-feed_process_arrow {
+    margin-right: -150px;
+  }
+
+  .testimonials_slider {
+    max-width: 320px;
+    flex-direction: column;
+  }
+
+  .testimonial_card {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    max-width: 320px;
+    flex-direction: column;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
   }
 
   .footer-wrapper_center_down ul {
