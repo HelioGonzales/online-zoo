@@ -44,12 +44,17 @@ h1 {
 .wraper-nav-logo {
   display: flex;
   align-items: center;
+  width: 1160px;
 }
 
 .logo {
   text-decoration: none;
   color: #ffffff;
   box-sizing: border-box;
+}
+
+.nav-toggle {
+  display: none;
 }
 
 nav ul {
@@ -90,6 +95,21 @@ nav ul li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.logo-left {
+  flex-grow: 0;
+}
+
+.logo-right {
+  flex-grow: 1;
+}
+
+.designed-by {
+  flex-grow: 1;
+  display: flex;
+  justify-content: end;
+  padding-right: 5rem;
 }
 
 /************* /HEADER *************/
@@ -658,6 +678,10 @@ footer {
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .designed-by {
+    padding-right: 0;
   }
 
   .banner-bg {
