@@ -35,6 +35,10 @@ header {
   height: 80px;
 }
 
+.panel {
+  display: none;
+}
+
 h1 {
   position: absolute;
   clip: rect(0, 0, 0, 0);
@@ -58,7 +62,7 @@ h1 {
   display: none;
 }
 
-nav ul {
+.logo-right ul {
   display: flex;
   justify-content: space-around;
   gap: 20px;
@@ -915,6 +919,54 @@ footer {
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .panel {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    /* overflow-y: auto; */
+    background-color: white;
+    /* opacity: 0; */
+    /* transition: transform .3s ease, ocpacity 0.5s ease; */
+    /* visibility: hidden; */
+    transition: transform 0.3s ease;
+    /* De arriba */
+    /* transform: translate(0, -100%); */
+    /* De abajo */
+    /* transform: translate(0, 100%); */
+    /* De la derecha */
+    transform: translate(100%, 0);
+    /* De la izquierda */
+    /* transform
+    
+    : translate(-100%, 0); */
+  }
+
+  .panel.is-active {
+    transform: translate(0, 0);
+    /* visibility: visible; */
+    /* Opacidad */
+    /* Opacity: 1; */
+  }
+
+  .menu {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: black;
+  }
+
+  .menu ul {
+    display: block;
   }
 
   .nav-toggle {
