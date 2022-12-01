@@ -1,6 +1,5 @@
+const d = document;
 function burgerMenu() {
-  const d = document;
-
   d.addEventListener("click", (e) => {
     // e.preventDefault();
     if (e.target.matches(".nav-toggle")) {
@@ -19,4 +18,27 @@ function burgerMenu() {
   });
 }
 
+function slider() {
+  const cardWrapper = [...d.querySelectorAll(".pets-card-wrapper")];
+  const leftBtn = [...d.querySelectorAll(".pets-left-btn *")];
+  const rightBtn = [...d.querySelectorAll(".pets-right-btn *")];
+
+  cardWrapper.forEach((item, i) => {
+    console.log(item);
+    let wrapperDimensions = item.getBoundingClientRect();
+    let wrapperWidth = wrapperDimensions.width;
+
+    leftBtn[i].addEventListener("click", (e) => {
+      // e.preventDefault();
+      item.scrollLeft -= wrapperWidth;
+    });
+
+    rightBtn[i].addEventListener("click", (e) => {
+      // e.preventDefault();
+      item.scrollLeft += wrapperWidth;
+    });
+  });
+}
+
 burgerMenu();
+slider();

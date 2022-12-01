@@ -275,10 +275,13 @@ nav ul li {
 
 .pets-card-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
+  overflow-x: auto;
   gap: 30px;
   width: 1158px;
   height: 872px;
+  scroll-behavior: smooth;
 }
 
 .card {
