@@ -269,23 +269,55 @@ nav ul li {
 
 .pets-center-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 1158px;
+  overflow: hidden;
+  margin-left: 60px;
+}
+
+.carousel {
+  display: flex;
+  position: relative;
+  left: -1158px;
 }
 
 .pets-card-wrapper {
   display: flex;
-  /* flex-wrap: wrap; */
-  /* flex-direction: column; */
-  overflow-x: auto;
-  gap: 30px;
   width: 1158px;
-  height: 872px;
-  scroll-behavior: smooth;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+}
+
+@keyframes to-right {
+  from {
+    left: -1158px;
+  }
+
+  to {
+    left: -2316px;
+  }
+}
+
+@keyframes to-left {
+  from {
+    left: -1158px;
+  }
+
+  to {
+    left: 0px;
+  }
+}
+
+.transition-right {
+  animation: 3s to-right;
+}
+
+.transition-left {
+  animation: 3s to-left;
 }
 
 .card {
-  max-width: 366px;
+  max-width: 300px;
   height: 426px;
   border-radius: 5px;
   box-sizing: border-box;
@@ -839,6 +871,27 @@ footer {
     max-width: 940px;
   }
 
+  .pets-center-wrapper {
+    display: flex;
+    width: 940px;
+    overflow: hidden;
+    margin-left: -5px;
+  }
+
+  .carousel {
+    display: flex;
+    position: relative;
+    left: -940px;
+  }
+
+  .pets-card-wrapper {
+    display: flex;
+    width: 1158px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+  }
+
   .pick-and-feed_content {
     height: auto;
     padding-bottom: 100px;
@@ -868,7 +921,7 @@ footer {
   }
 
   .card {
-    max-width: 294px;
+    max-width: 240px;
   }
 
   .pick-and-feed_content {
@@ -924,6 +977,10 @@ footer {
     padding-right: 20px;
   }
 
+  .logo-left,
+  .logo-right {
+    display: none;
+  }
   .panel {
     display: block;
     position: fixed;
@@ -1047,6 +1104,12 @@ footer {
     gap: 92px 20px;
   }
 
+  .carousel {
+    display: flex;
+    position: relative;
+    left: -640pxpx;
+  }
+
   .card {
     max-width: 294px;
   }
@@ -1116,6 +1179,11 @@ footer {
     justify-content: space-between;
     padding-left: 2px;
     padding-right: 20px;
+  }
+
+  .logo-left,
+  .logo-right {
+    display: none;
   }
 
   .nav-toggle {
@@ -1191,6 +1259,12 @@ footer {
     width: 320px;
     gap: 20px 0;
     height: auto;
+  }
+
+  .carousel {
+    display: flex;
+    position: relative;
+    left: -320px;
   }
 
   .card {
